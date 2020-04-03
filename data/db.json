@@ -31,8 +31,8 @@
   ],
   "categories": [
     {
-      "name": "Hardware",
-      "display_name": "Hardware",
+      "name": "Computer Hardware",
+      "display_name": "Computer Hardware",
       "description": "All the programs that run on your computer.",
       "id": 1
     },

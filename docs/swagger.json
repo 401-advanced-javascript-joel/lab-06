@@ -9,14 +9,14 @@
       "url" : "http://localhost:3000"
     } ],
     "paths" : {
-      "/products/4" : {
-        "delete" : {
+      "/" : {
+        "get" : {
           "description" : "Auto generated using Swagger Inspector",
           "responses" : {
             "200" : {
               "description" : "Auto generated using Swagger Inspector",
               "content" : {
-                "application/json; charset=utf-8" : {
+                "text/html; charset=UTF-8" : {
                   "schema" : {
                     "type" : "string"
                   },
@@ -33,7 +33,7 @@
           "url" : "http://localhost:3000"
         } ]
       },
-      "/categories/1" : {
+      "/api/v1/categories" : {
         "get" : {
           "description" : "Auto generated using Swagger Inspector",
           "responses" : {
@@ -53,7 +53,7 @@
             "url" : "http://localhost:3000"
           } ]
         },
-        "put" : {
+        "post" : {
           "description" : "Auto generated using Swagger Inspector",
           "requestBody" : {
             "content" : {
@@ -63,14 +63,14 @@
                 },
                 "examples" : {
                   "0" : {
-                    "value" : "{\n    \"name\": \"Hardware\",\n    \"display_name\": \"Computer Hardware\",\n    \"description\": \"All the physical parts of your computer.\"\n}"
+                    "value" : "{\n    \"name\": \"Clothing\",\n    \"display_name\": \"Clothing\",\n    \"description\": \"Stuff you wear.\"\n}"
                   }
                 }
               }
             }
           },
           "responses" : {
-            "200" : {
+            "201" : {
               "description" : "Auto generated using Swagger Inspector",
               "content" : {
                 "application/json; charset=utf-8" : {
@@ -90,31 +90,7 @@
           "url" : "http://localhost:3000"
         } ]
       },
-      "/categories/4" : {
-        "delete" : {
-          "description" : "Auto generated using Swagger Inspector",
-          "responses" : {
-            "200" : {
-              "description" : "Auto generated using Swagger Inspector",
-              "content" : {
-                "application/json; charset=utf-8" : {
-                  "schema" : {
-                    "type" : "string"
-                  },
-                  "examples" : { }
-                }
-              }
-            }
-          },
-          "servers" : [ {
-            "url" : "http://localhost:3000"
-          } ]
-        },
-        "servers" : [ {
-          "url" : "http://localhost:3000"
-        } ]
-      },
-      "/products/1" : {
+      "/api/v1/categories/1" : {
         "get" : {
           "description" : "Auto generated using Swagger Inspector",
           "responses" : {
@@ -144,7 +120,10 @@
                 },
                 "examples" : {
                   "0" : {
-                    "value" : "{\n    \"category\": \"Hardware\",\n    \"name\": \"Intel CPU\",\n    \"display_name\": \"Best CPU\",\n    \"description\": \"Makes your computer run faster.\"\n}"
+                    "value" : "{\n    \"description\": \"All the programs that run on your computer.\"\n}"
+                  },
+                  "1" : {
+                    "value" : "{\n    \"name\": \"Computer Hardware\",\n    \"display_name\": \"Computer Hardware\",\n    \"description\": \"All the physical parts of your computer.\"\n}"
                   }
                 }
               }
@@ -167,31 +146,7 @@
             "url" : "http://localhost:3000"
           } ]
         },
-        "servers" : [ {
-          "url" : "http://localhost:3000"
-        } ]
-      },
-      "/categories" : {
-        "get" : {
-          "description" : "Auto generated using Swagger Inspector",
-          "responses" : {
-            "200" : {
-              "description" : "Auto generated using Swagger Inspector",
-              "content" : {
-                "application/json; charset=utf-8" : {
-                  "schema" : {
-                    "type" : "string"
-                  },
-                  "examples" : { }
-                }
-              }
-            }
-          },
-          "servers" : [ {
-            "url" : "http://localhost:3000"
-          } ]
-        },
-        "post" : {
+        "patch" : {
           "description" : "Auto generated using Swagger Inspector",
           "requestBody" : {
             "content" : {
@@ -201,14 +156,17 @@
                 },
                 "examples" : {
                   "0" : {
-                    "value" : "{\n    \"name\": \"Clothing\",\n    \"display_name\": \"Clothing\",\n    \"description\": \"All the fabrics that cover your body.\"\n}"
+                    "value" : "{\n    \"description\": \"All the programs that run on your computer.\"\n}"
+                  },
+                  "1" : {
+                    "value" : "{\n    \"name\": \"Computer Hardware\",\n    \"display_name\": \"Computer Hardware\",\n    \"description\": \"All the physical parts of your computer.\"\n}"
                   }
                 }
               }
             }
           },
           "responses" : {
-            "201" : {
+            "200" : {
               "description" : "Auto generated using Swagger Inspector",
               "content" : {
                 "application/json; charset=utf-8" : {
@@ -228,7 +186,31 @@
           "url" : "http://localhost:3000"
         } ]
       },
-      "/products" : {
+      "/api/v1/categories/5" : {
+        "delete" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "/api/v1/products" : {
         "get" : {
           "description" : "Auto generated using Swagger Inspector",
           "responses" : {
@@ -258,7 +240,7 @@
                 },
                 "examples" : {
                   "0" : {
-                    "value" : "{\n    \"category\": \"Clothing\",\n    \"name\": \"Shirt\",\n    \"display_name\": \"Dress Shirt\",\n    \"description\": \"Makes your upper body clothed.\"\n}"
+                    "value" : "{\n    \"category\": \"Clothing\",\n    \"name\": \"Shirt\",\n    \"display_name\": \"Dress Shirt\",\n    \"description\": \"Keeps you warm and looks nice.\"\n}"
                   }
                 }
               }
@@ -285,14 +267,110 @@
           "url" : "http://localhost:3000"
         } ]
       },
-      "/" : {
+      "/api/v1/products/1" : {
         "get" : {
           "description" : "Auto generated using Swagger Inspector",
           "responses" : {
             "200" : {
               "description" : "Auto generated using Swagger Inspector",
               "content" : {
-                "text/html; charset=UTF-8" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "put" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/body_4"
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\n    \"description\": \"Makes your computer run the fastest.\"\n}"
+                  },
+                  "1" : {
+                    "value" : "{\n    \"category\": \"Hardware\",\n    \"name\": \"Intel-CPU\",\n    \"display_name\": \"Best CPU\",\n    \"description\": \"Makes your computer run fastest.\"\n}"
+                  }
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "patch" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/body_5"
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\n    \"description\": \"Makes your computer run the fastest.\"\n}"
+                  },
+                  "1" : {
+                    "value" : "{\n    \"category\": \"Hardware\",\n    \"name\": \"Intel-CPU\",\n    \"display_name\": \"Best CPU\",\n    \"description\": \"Makes your computer run fastest.\"\n}"
+                  }
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "/api/v1/products/5" : {
+        "delete" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
                   "schema" : {
                     "type" : "string"
                   },
@@ -335,9 +413,6 @@
             "description" : {
               "type" : "string"
             },
-            "category" : {
-              "type" : "string"
-            },
             "display_name" : {
               "type" : "string"
             }
@@ -358,6 +433,40 @@
           }
         },
         "body_3" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "category" : {
+              "type" : "string"
+            },
+            "display_name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "body_4" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "category" : {
+              "type" : "string"
+            },
+            "display_name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "body_5" : {
           "type" : "object",
           "properties" : {
             "name" : {

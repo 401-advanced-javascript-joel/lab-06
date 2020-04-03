@@ -4,7 +4,7 @@
   "description": "Working with local rest api server using json-server",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch ./data/db.json",
+    "start": "node server.js",
     "lint": "eslint **/*.js"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/401-advanced-javascript-joel/lab-06/issues"
   },
-  "homepage": "https://github.com/401-advanced-javascript-joel/lab-06#readme"
+  "homepage": "https://github.com/401-advanced-javascript-joel/lab-06#readme",
+  "devDependencies": {
+    "json-server": "^0.16.1"
+  }
 }
