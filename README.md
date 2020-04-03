@@ -15,5 +15,9 @@
 
 - `npm start`
 
+### passed tests
+![passed](https://raw.githubusercontent.com/JoelMWatson/data-structures-and-algorithms/master/assets/lab-06-passed.jpg)
+
+
 ### UML
 ![UML](https://raw.githubusercontent.com/JoelMWatson/data-structures-and-algorithms/master/assets/lab-06.jpg)
