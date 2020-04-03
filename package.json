@@ -1,0 +1,20 @@
+{
+  "name": "lab-06",
+  "version": "1.0.0",
+  "description": "Working with local rest api server using json-server",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch ./data/db.json",
+    "lint": "eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-joel/lab-06.git"
+  },
+  "author": "Joel Watson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-joel/lab-06/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-joel/lab-06#readme"
+}

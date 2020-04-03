@@ -1,0 +1,379 @@
+{
+    "openapi" : "3.0.1",
+    "info" : {
+      "title" : "defaultTitle",
+      "description" : "defaultDescription",
+      "version" : "0.1"
+    },
+    "servers" : [ {
+      "url" : "http://localhost:3000"
+    } ],
+    "paths" : {
+      "/products/4" : {
+        "delete" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "/categories/1" : {
+        "get" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "put" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/body"
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\n    \"name\": \"Hardware\",\n    \"display_name\": \"Computer Hardware\",\n    \"description\": \"All the physical parts of your computer.\"\n}"
+                  }
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "/categories/4" : {
+        "delete" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "/products/1" : {
+        "get" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "put" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/body_1"
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\n    \"category\": \"Hardware\",\n    \"name\": \"Intel CPU\",\n    \"display_name\": \"Best CPU\",\n    \"description\": \"Makes your computer run faster.\"\n}"
+                  }
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "/categories" : {
+        "get" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "post" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/body_2"
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\n    \"name\": \"Clothing\",\n    \"display_name\": \"Clothing\",\n    \"description\": \"All the fabrics that cover your body.\"\n}"
+                  }
+                }
+              }
+            }
+          },
+          "responses" : {
+            "201" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "/products" : {
+        "get" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "post" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/body_3"
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\n    \"category\": \"Clothing\",\n    \"name\": \"Shirt\",\n    \"display_name\": \"Dress Shirt\",\n    \"description\": \"Makes your upper body clothed.\"\n}"
+                  }
+                }
+              }
+            }
+          },
+          "responses" : {
+            "201" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "/" : {
+        "get" : {
+          "description" : "Auto generated using Swagger Inspector",
+          "responses" : {
+            "200" : {
+              "description" : "Auto generated using Swagger Inspector",
+              "content" : {
+                "text/html; charset=UTF-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      }
+    },
+    "components" : {
+      "schemas" : {
+        "body" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "display_name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "body_1" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "category" : {
+              "type" : "string"
+            },
+            "display_name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "body_2" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "display_name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "body_3" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "category" : {
+              "type" : "string"
+            },
+            "display_name" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  }
