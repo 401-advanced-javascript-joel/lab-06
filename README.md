@@ -3,16 +3,21 @@
 ## Author: Joel Watson
 
 ### Links and Resources
- - [Swagger Docs](#)
- - [CI/CD](#))
+ - [Pull Request](https://github.com/401-advanced-javascript-joel/lab-06/pull/1)
+ - [Swagger Docs](https://app.swaggerhub.com/apis-docs/Jo3lerBear/Test-API/0.1) (regular Assignment)
+ - [Swagger Docs](https://app.swaggerhub.com/apis-docs/Jo3lerBear/Test-Rest-API/0.1) (stretch goal)
 
 ### Setup
 
-- `npm i -g json-server`
+- `npm install`
 
-#### How to run
+### How to run
 
 - `npm start`
 
-#### UML
+### passed tests
+![passed](![image](https://drive.google.com/uc?export=view&id=1EBLZLjMgvUSYeFc7ES_yiRAHeZVfnKCD)
+
+
+### UML
 ![UML](https://raw.githubusercontent.com/JoelMWatson/data-structures-and-algorithms/master/assets/lab-06.jpg)
